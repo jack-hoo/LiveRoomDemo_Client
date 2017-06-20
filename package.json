@@ -11,11 +11,13 @@
   "dependencies": {
     "videojs-contrib-hls": "^5.5.3",
     "vonic": "^2.0.0-beta.10",
+    "vue-slideout": "^1.5.1",
+    "vue-stomp": "0.0.5",
     "vue-video-player": "^3.1.1"
   },
   "devDependencies": {
-    "axios": "^0.15.3",
     "autoprefixer": "^6.7.2",
+    "axios": "^0.15.3",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.22.0",
@@ -42,9 +44,9 @@
     "url-loader": "^0.5.7",
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^2.0.0",
-    "vue2-barrage": "^1.0.7",
-    "vuex": "^2.0.0-rc.6",
     "vue-template-compiler": "^2.1.10",
+    "vue2-barrage": "^1.0.8",
+    "vuex": "^2.3.1",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
