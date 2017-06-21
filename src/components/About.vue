@@ -48,7 +48,7 @@
                 <span>项目架构: Jquery + BootStrap </span><br>
                 <span>视频播放器: video.js</span><br>
                 <span>websocket客户端: stomp.js + sockjs.js</span><br>
-                <span>弹幕插件: Jquery.barrager.js</span><br>
+                <span>弹幕插件: Jquery.danmu.js</span><br>
                 <span>模版引擎: thymeleaf</span><br>
                 <span>访问地址: <a href="http://www.veton.cc/live_room">http://www.veton.cc/live_room</a></span>
               </p>

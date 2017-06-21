@@ -5,8 +5,8 @@
 * 直播间弹幕
 * 直播间的实时数据统计    
 * [演示地址(电脑端与移动端效果不同哦)](http://www.veton.cc:8080/LiveDemo/live_room)
-
-## 技术栈   
+* [博客地址]()
+## 技术栈  
 
 - VUE全家桶
 - UI层vonic
@@ -16,7 +16,7 @@
 - 弹幕插件: vue-barrage
 - 打包工具:webpack
 
-## 运行截图   
+## 运行截图
 > 全局效果
 ![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/screenshot1.png)
 > 弹幕效果
@@ -24,7 +24,7 @@
 
 ## 安装运行(需要配合服务端)
 
-- quick 
+- quick
 
 
 ``` bash
