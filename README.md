@@ -3,8 +3,8 @@
 * 拉取服务器上的直播流(移动端拉取hls流、电脑端拉取rtmp流)
 * 基于websocket的直播聊天室
 * 炫丽的直播间弹幕
-* 直播间的实时数据统计    
-* [演示地址](http://www.veton.cc:8080/LiveDemo/live_room)
+* 直播间的实时数据统计    
+* [演示地址(电脑端与移动端效果不同哦)](http://www.veton.cc:8080/LiveDemo/live_room)
 
 ## 技术栈   
 
