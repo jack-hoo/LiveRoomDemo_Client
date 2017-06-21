@@ -18,7 +18,7 @@
 
 ## 运行截图   
 > 全局效果
-![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/screenshot1.png)
+![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/quanju.jpg)
 > 弹幕效果
 ![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)
 
