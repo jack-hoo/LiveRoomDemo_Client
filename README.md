@@ -22,7 +22,7 @@
 > 弹幕效果
 ![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)
 
-## 安装运行(需要配合服务端)
+## 安装运行(需要配合[服务端](https://github.com/jack-hoo/LiveRoomDemo_Server))
 
 - quick 
 
