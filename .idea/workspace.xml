@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c630344c-cb91-40c3-8c1c-99400e58f623" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/screenshot/danmu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/screenshot/quanju.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -381,7 +381,7 @@
       <workItem from="1497940737276" duration="1217000" />
       <workItem from="1497968314621" duration="296000" />
       <workItem from="1497968673203" duration="1417000" />
-      <workItem from="1498007474668" duration="4060000" />
+      <workItem from="1498007474668" duration="4678000" />
     </task>
     <task id="LOCAL-00001" summary="修订package.json">
       <created>1497969489175</created>
@@ -404,17 +404,23 @@
       <option name="project" value="LOCAL" />
       <updated>1498012435169</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="弹幕图片">
+      <created>1498012696802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1498012696802</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82684000" />
+    <option name="totallyTimeSpent" value="83302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -443,7 +449,8 @@
     <MESSAGE value="修订package.json" />
     <MESSAGE value="完善readme" />
     <MESSAGE value="图片测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片测试" />
+    <MESSAGE value="弹幕图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="弹幕图片" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
