@@ -1,4 +1,4 @@
-# LiveRoomDemo(移动端)
+# LiveRoomDemo(客户端)
 > 这是一个用Vue.js写的一个直播间Demo,主要实现了以下功能
 * 拉取服务器上的直播流(移动端拉取hls流、电脑端拉取rtmp流)
 * 基于websocket的直播聊天室
@@ -18,11 +18,11 @@
 
 ## 运行截图
 > 全局效果
-![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/screenshot1.png)
+![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/quanju.jpg)
 > 弹幕效果
 ![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)
 
-## 安装运行(需要配合服务端)
+## 安装运行(需要配合[服务端](https://github.com/jack-hoo/LiveRoomDemo_Server))
 
 - quick
 
