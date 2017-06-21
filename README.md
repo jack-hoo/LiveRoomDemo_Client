@@ -1,4 +1,4 @@
-# LiveRoomDemo(移动端)
+# LiveRoomDemo(客户端)
 > 这是一个用Vue.js写的一个直播间Demo,主要实现了以下功能
 * 拉取服务器上的直播流(移动端拉取hls流、电脑端拉取rtmp流)
 * 基于websocket的直播聊天室
