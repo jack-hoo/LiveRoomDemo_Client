@@ -12,6 +12,7 @@ import ChatRoom from './components/chatroom.vue'
 import Guest from './components/guest.vue'
 import History from './components/history.vue'
 import FeedBack from './components/feedback.vue'
+import RoomInfo from './components/roominfo.vue'
 
 Vue.use(Vuex)
 Vue.use(VueStomp,"/LiveDemo/live")
@@ -30,6 +31,9 @@ const routes = [
     },{
         path:'/history',
         component: History
+    },{
+        path:'/roomInfo',
+        component: RoomInfo
     }
   ]},
   { path: '/about', component: About },

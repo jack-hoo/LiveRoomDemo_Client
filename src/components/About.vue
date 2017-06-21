@@ -22,9 +22,14 @@
             <li>
               1.切换直播源
               <p>
-                本直播间(移动端)默认的直播源是http://www.veton.cc/hls/demo.m3u8,如果你想尝试自己推流，你可以选择推流工具(OBS Studio),
-                选择推流地址rtmp://www.veton.cc/live/demo即可看到你的直播内容，你可以分享直播间地址，你的好友就能看到你的直播内容啦~~.
+                本直播间(移动端)默认的直播源是http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8,如果你想尝试自己推流，点击我要直播按钮之后，你可以选择推流工具OBS(专业级别，适用于电脑端推流)或者手机端的推流软件
+                Yasea(灰常强大的开源手机端推流软件)我这里给一个<a href="https://pan.baidu.com/s/1gfcgLYb">下载链接</a>apk非常小才1.2M,
+                然后在推流软件中选择推流地址rtmp://www.veton.cc/live/demo,推送到本站服务器地址，即可看到你的直播内容，你可以分享直播间地址，你的好友就能看到你的直播内容啦~~.
               </p>
+            </li>
+            <li>
+              2.项目源码地址
+              <p><a href="https://github.com/jack-hoo/LiveRoomDemo_Client">https://github.com/jack-hoo/LiveRoomDemo_Client</a>欢迎star!</p>
             </li>
           </ul>
           <h4>3.技术说明:</h4>
@@ -38,7 +43,7 @@
                 <span>websocket客户端: vue-stomp</span><br>
                 <span>弹幕插件: vue-barrage</span><br>
                 <span>打包工具:webpack</span><br>
-                <span>访问地址: <a href="http://www.veton.cc/live_room_p">http://www.veton.cc/live_room_p</a></span>
+                <span>访问地址: <a href="http://www.veton.cc:8080/LiveDemo/live_room">请使用手机访问效果更佳</a></span>
               </p>
 
             </li>
@@ -50,7 +55,7 @@
                 <span>websocket客户端: stomp.js + sockjs.js</span><br>
                 <span>弹幕插件: Jquery.danmu.js</span><br>
                 <span>模版引擎: thymeleaf</span><br>
-                <span>访问地址: <a href="http://www.veton.cc/live_room">http://www.veton.cc/live_room</a></span>
+                <span>访问地址: <a href="http://www.veton.cc:8080/LiveDemo/live_room">请使用电脑访问效果更佳</a></span>
               </p>
 
             </li>
@@ -92,10 +97,13 @@
           <ul>
             <li>作者: 胡上杰</li>
             <li>学历: 本科</li>
+            <li>个人简历: <a href="/LiveDemo/resume">胡上杰的简历</a></li>
             <li>毕业院校: 江西财经大学软件工程</li>
             <li>技术栈:JavaWeb全栈开发</li>
-            <li>博客地址: <a href="http://www.veton.cc">http://www.veton.cc</a></li>
-            <li>状态: 求职中</li>
+            <li>Demo技术详解: <a href="">here</a></li>
+            <li>博客地址: <a href="http://blog.csdn.net/hushangjie">csdn</a></li>
+            <li>开源项目地址: <a href="https://github.com/jack-hoo">github</a></li>
+            <li>状态: 求职中(谢谢各位老板和猎手)</li>
             <li>联系方式: 15579870840</li>
             <li>邮箱: 979783618@qq.com</li>
           </ul>
@@ -133,7 +141,7 @@
   ul {
     margin-left: 15px;
     font-size: 16px;
-    color: #4b8bf4;
+    color: rgba(17, 187, 70, 0.81);
   }
 
   ul > li >p{

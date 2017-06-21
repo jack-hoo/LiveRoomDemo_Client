@@ -50,7 +50,7 @@
           sources: [{
             withCredentials: false,
             type: "application/x-mpegURL",
-            src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8"
+            src: "http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8"
           }],
           autoPlay: true,
           controlBar: {
@@ -64,6 +64,7 @@
         tabs: [
           "聊天室",
           "现场嘉宾",
+          "房间信息",
           "访客记录"
         ],
         tabIndex: 0,
@@ -75,7 +76,7 @@
         $dialog.alert({
           effect: 'default',
           title: '提示',
-          content: '请使用推流软件(OBS等)，推送到rtmp://www.veton.cc/live/demo,即可在本直播间看到您的直播内容',
+          content: '请使用推流软件推送到rtmp://www.veton.cc/live/demo,即可在本直播间看到您的直播内容,具体操作请看demo说明',
           okText: '确定',
           okTheme: 'assertive'
         })
@@ -97,6 +98,10 @@
           this.$router.push('/guest')
         }
         if (index == 2 && index != this.tabIndex) {
+          this.tabIndex = index;
+          this.$router.push('/roomInfo')
+        }
+        if (index == 3  && index != this.tabIndex) {
           this.tabIndex = index;
           this.$router.push('/history')
         }
