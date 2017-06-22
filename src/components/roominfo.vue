@@ -7,7 +7,6 @@
         <li>个人简历: <a href="/LiveDemo/resume">jack-hoo的简历</a></li>
         <li>毕业院校: ***REMOVED***软件工程</li>
         <li>技术栈:JavaWeb全栈开发</li>
-        <li>Demo技术详解: <a href="">here</a></li>
         <li>博客地址: <a href="http://github.com/jack-hoo">csdn</a></li>
         <li>开源项目地址: <a href="https://github.com/jack-hoo">github</a></li>
         <li>状态: 求职中(谢谢各位老板和猎手)</li>
