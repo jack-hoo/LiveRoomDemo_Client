@@ -18,6 +18,10 @@
 
 ## 运行截图
 > 全局效果
+###手机端
+![手机端](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mb.gif)
+###电脑端
+
 ![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/quanju.jpg)
 > 弹幕效果
 ![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)
