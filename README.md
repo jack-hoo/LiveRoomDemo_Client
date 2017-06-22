@@ -20,12 +20,17 @@
 > 全局效果
 ###手机端
 ![手机端](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mb.gif)
+>户外直播
+![户外直播](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/huwai.png)
+![lol](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/lol2.png)
+![lol2](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/lol.png)
+>移动端弹幕
+![mbdamu](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mbdanmu.png)
 ###电脑端
-
 ![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/quanju.jpg)
 > 弹幕效果
 ![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)
-
+![huwai](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mzdemo.png)
 ## 安装运行(需要配合[服务端](https://github.com/jack-hoo/LiveRoomDemo_Server))
 
 - quick
