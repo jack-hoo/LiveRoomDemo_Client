@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c630344c-cb91-40c3-8c1c-99400e58f623" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/screenshot/mbdanmu.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,8 +83,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="432">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -371,7 +369,7 @@
       <workItem from="1497968314621" duration="296000" />
       <workItem from="1497968673203" duration="1417000" />
       <workItem from="1498007474668" duration="18427000" />
-      <workItem from="1498105561302" duration="4931000" />
+      <workItem from="1498105561302" duration="5318000" />
     </task>
     <task id="LOCAL-00001" summary="修订package.json">
       <created>1497969489175</created>
@@ -436,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498126176032</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新说明文档">
+      <created>1498126649858</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1498126649858</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101982000" />
+    <option name="totallyTimeSpent" value="102369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="0" />
@@ -479,7 +484,8 @@
     <MESSAGE value="博客地址" />
     <MESSAGE value="添加房间信息板块" />
     <MESSAGE value="截图上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="截图上传" />
+    <MESSAGE value="更新说明文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新说明文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -813,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="432">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
           <folding />
         </state>
       </provider>
