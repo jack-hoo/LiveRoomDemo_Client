@@ -1,64 +1,67 @@
-# LiveRoomDemo(客户端)
-> 这是一个用Vue.js写的一个直播间Demo,主要实现了以下功能
-* 拉取服务器上的直播流(移动端拉取hls流、电脑端拉取rtmp流)
-* 基于websocket的直播聊天室
-* 直播间弹幕
-* 直播间的实时数据统计    
-* [演示地址(电脑端与移动端效果不同哦)](http://127.0.0.1:8080/LiveDemo/live_room)
-* [博客地址](https://segmentfault.com/a/1190000009892006)
-## 技术栈  
+# LiveRoomDemo — Client
 
-- VUE全家桶
-- UI层vonic
-- axios
-- 视频播放器: vue-video-player + videojs-contrib-hls
-- websocket客户端: vue-stomp
-- 弹幕插件: vue-barrage
-- 打包工具:webpack
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Vue](https://img.shields.io/badge/Vue-2.x-42b883.svg)](https://v2.vuejs.org/)
+[![Node](https://img.shields.io/badge/Node-8.x-green.svg)](https://nodejs.org/)
 
-## 运行截图
-### 手机端
-![手机端](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mb.gif)    
+The mobile front-end of a live-streaming room demo, built with Vue 2: HLS playback,
+a STOMP-over-WebSocket chat room, bullet-screen comments and live viewer statistics.
 
-![户外直播](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/huwai.png)    
+**中文文档请看 [README.zh-CN.md](README.zh-CN.md)** — it is the primary documentation and
+covers setup, configuration and the Node version requirement in detail.
 
-![lol](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/lol2.png)    
+---
 
-![lol2](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/lol.png)    
+## Features
 
->移动端弹幕    
+- HLS live playback via `vue-video-player` + `videojs-contrib-hls`
+- WebSocket chat room over STOMP (`vue-stomp`)
+- Bullet-screen comments synced with the chat (`vue2-barrage`)
+- Live online-viewer list and visitor history
+- Mobile-first UI built on [Vonic](https://github.com/wangdahoo/vonic)
 
-![mbdamu](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mbdanmu.png)    
+## ⚠️ Node version requirement
 
-### 电脑端 
-
-![全局](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/quanju.jpg)   
-
-> 弹幕效果    
-
-![弹幕](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/danmu.png)    
-
-![户外直播](https://github.com/jack-hoo/LiveRoomDemo_Client/blob/master/static/screenshot/mzdemo.jpg)
-## 安装运行(需要配合[服务端](https://github.com/jack-hoo/LiveRoomDemo_Server))
-
-- quick
-
-
-``` bash
-git clone https://github.com/jack-hoo/LiveRoomDemo_Client.git
-cd LiveRoomDemo_Client
-npm install -g yarn
-yarn
-```
-
-- development
+This project's build chain is frozen at **webpack 2 + node-sass 4.x**, which means it
+**only installs on Node 8.x**. `node-sass@4` ships no prebuilt binary for Node 9 or
+newer, so `npm install` fails before the build even starts.
 
 ```bash
+nvm install 8
+nvm use 8
+npm install
 npm run dev
 ```
 
-- build
+The framework and build toolchain were deliberately left untouched during the 2026
+cleanup, to keep the project as it originally was. See
+[README.zh-CN.md](README.zh-CN.md#环境要求) for the full rationale and the options if
+you want to modernise it.
+
+## Quick start
 
 ```bash
-npm run build
+nvm use 8
+npm install
+
+# point the client at your backend and stream, then:
+npm run dev      # dev server on http://localhost:8080, proxying /LiveDemo to :8085
+npm run build    # production bundle in dist/
 ```
+
+The backend lives in
+[LiveRoomDemo_Server](https://github.com/jack-hoo/LiveRoomDemo_Server) and must be
+running for the chat room to work. Configuration lives in `config/prod.env.js` —
+see [README.zh-CN.md](README.zh-CN.md#配置).
+
+## Related repositories
+
+- [LiveRoomDemo_Server](https://github.com/jack-hoo/LiveRoomDemo_Server) — Spring Boot backend
+
+## Contributing
+
+Issues and pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
+## License
+
+[MIT](LICENSE) © jack-hoo

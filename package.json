@@ -1,12 +1,30 @@
 {
-  "name": "vonic-webpack-starter",
+  "name": "liveroom-demo-client",
   "version": "1.0.0",
-  "description": "A Vonic Project",
-  "author": "wangdahoo <157195705@qq.com>",
+  "description": "直播间 Demo 移动端：HLS 拉流播放 + WebSocket 聊天室 + 弹幕 + 实时在线统计",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jack-hoo/LiveRoomDemo_Client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jack-hoo/LiveRoomDemo_Client/issues"
+  },
+  "homepage": "https://github.com/jack-hoo/LiveRoomDemo_Client#readme",
+  "keywords": [
+    "vue",
+    "webpack",
+    "hls",
+    "websocket",
+    "stomp",
+    "live-streaming",
+    "danmaku"
+  ],
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "check": "node build/check-syntax.js"
   },
   "dependencies": {
     "videojs-contrib-hls": "^5.5.3",
@@ -54,7 +72,7 @@
     "webpack-merge": "^2.6.1"
   },
   "engines": {
-    "node": ">= 4.0.0",
+    "node": ">= 4.0.0 < 9.0.0",
     "npm": ">= 3.0.0"
   }
 }

@@ -1,119 +1,114 @@
 <template>
   <div class="page">
     <div class="page-content">
-      <von-header theme="balanced" style="">
+      <von-header theme="balanced">
         <a href="#/" class="button button-icon ion-ios-arrow-back" slot="left"></a>
         <span slot="title">直播间demo说明</span>
-        <a href="http://www.baidu.com" class="button button-icon ion-social-github" slot="right"></a>
+        <a href="https://github.com/jack-hoo/LiveRoomDemo_Client" target="_blank" rel="noopener noreferrer"
+           class="button button-icon ion-social-github" slot="right"></a>
       </von-header>
-      <div class="">
+      <div>
         <scroll class="content-box">
-          <h4>1.功能说明:</h4>
+          <h4>1. 功能说明</h4>
           <ul>
-            <li>1.观看直播</li>
-            <li>2.切换直播源</li>
-            <li>3.聊天室</li>
-            <li>4.发送弹幕</li>
-            <li>5.在线人数实时监控</li>
-            <li>6.直播间访问记录</li>
+            <li>观看直播</li>
+            <li>切换直播源</li>
+            <li>聊天室</li>
+            <li>发送弹幕</li>
+            <li>在线人数实时监控</li>
+            <li>直播间访问记录</li>
           </ul>
-          <h4>2.使用说明:</h4>
-          <ul >
+
+          <h4>2. 使用说明</h4>
+          <ul>
             <li>
-              1.切换直播源
+              自己推流
               <p>
-                本直播间(移动端)默认的直播源是http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8,如果你想尝试自己推流，点击我要直播按钮之后，你可以选择推流工具OBS(专业级别，适用于电脑端推流)或者手机端的推流软件
-                Yasea(灰常强大的开源手机端推流软件)我这里给一个<a href="https://pan.baidu.com/s/1gfcgLYb">下载链接</a>apk非常小才1.2M,
-                然后在推流软件中选择推流地址rtmp://example.com/live/demo,推送到本站服务器地址，即可看到你的直播内容，你可以分享直播间地址，你的好友就能看到你的直播内容啦~~.
+                <span>本项目不内置任何直播源，直播地址需要自行配置。</span><br>
+                <span>用 OBS（电脑端）或任意支持 RTMP 的手机推流软件，推送到服务端配置的推流地址，
+                  即可在本直播间看到自己的直播内容。</span><br>
+                <span>推流服务（nginx-rtmp）的搭建步骤见服务端仓库的 docs/DEPLOYMENT.md。</span>
               </p>
             </li>
             <li>
-              2.项目源码地址
-              <p><a href="https://github.com/jack-hoo/LiveRoomDemo_Client">https://github.com/jack-hoo/LiveRoomDemo_Client</a>欢迎star!</p>
+              源码地址
+              <p>
+                <a href="https://github.com/jack-hoo/LiveRoomDemo_Client" target="_blank"
+                   rel="noopener noreferrer">移动端</a> /
+                <a href="https://github.com/jack-hoo/LiveRoomDemo_Server" target="_blank"
+                   rel="noopener noreferrer">服务端</a>，欢迎 star!
+              </p>
             </li>
           </ul>
-          <h4>3.技术说明:</h4>
+
+          <h4>3. 技术说明</h4>
           <ul>
             <li>
-              1.前端技术(移动端)
+              前端（移动端）
               <p>
-                <span>项目架构：Vue2+vue-router2+vuex2+axios</span><br>
-                <span>UI框架: Vonic2.0</span><br>
+                <span>项目架构: Vue2 + vue-router2 + vuex2 + axios</span><br>
+                <span>UI 框架: Vonic 2.0</span><br>
                 <span>视频播放器: vue-video-player + videojs-contrib-hls</span><br>
-                <span>websocket客户端: vue-stomp</span><br>
-                <span>弹幕插件: vue-barrage</span><br>
-                <span>打包工具:webpack</span><br>
-                <span>访问地址: <a href="http://example.com:8080/LiveDemo/live_room">请使用手机访问效果更佳</a></span>
+                <span>WebSocket 客户端: vue-stomp</span><br>
+                <span>弹幕插件: vue2-barrage</span><br>
+                <span>打包工具: webpack 2</span>
               </p>
-
             </li>
             <li>
-              2.前端技术(电脑端)
-              <p >
-                <span>项目架构: Jquery + BootStrap </span><br>
+              前端（电脑端）
+              <p>
+                <span>项目架构: jQuery + Bootstrap</span><br>
                 <span>视频播放器: video.js</span><br>
-                <span>websocket客户端: stomp.js + sockjs.js</span><br>
-                <span>弹幕插件: Jquery.danmu.js</span><br>
-                <span>模版引擎: thymeleaf</span><br>
-                <span>访问地址: <a href="http://example.com:8080/LiveDemo/live_room">请使用电脑访问效果更佳</a></span>
+                <span>WebSocket 客户端: stomp.js + sockjs.js</span><br>
+                <span>弹幕插件: jquery.danmu.js</span><br>
+                <span>模板引擎: thymeleaf</span>
               </p>
-
             </li>
             <li>
-              2.后端技术
-              <p >
-                <span>IDE: IntelliJ IDEA</span><br>
-                <span>项目架构: SpringBoot1.5.4 +Maven3.0 </span><br>
-                <span>主数据库: Mysql5.7</span><br>
-                <span>辅数据库: redis3.2 </span><br>
-                <span>数据库访问层: spring-boot-starter-data-jpa + spring-boot-starter-data-redis</span><br>
-                <span>websocket: spring-boot-starter-websocket</span><br>
-                <span>消息中间件: RabbitMQ/3.6.10</span>
-              </p>
-
-            </li>
-            <li>
-              3.服务器部署
+              后端
               <p>
-                <span>视频直播模块: nginx-rtmp-module</span><br>
-                <span>web应用服务器: tomcat8.0</span><br>
-                <span>服务器: 腾讯云centos6.5</span>
+                <span>项目架构: Spring Boot 1.5.4 + Maven</span><br>
+                <span>主数据库: MySQL</span><br>
+                <span>辅数据库: Redis</span><br>
+                <span>数据访问: spring-boot-starter-data-jpa + spring-boot-starter-data-redis</span><br>
+                <span>WebSocket: spring-boot-starter-websocket</span><br>
+                <span>消息中间件: RabbitMQ（可选，见服务端配置 liveroom.broker.relay-enabled）</span>
               </p>
-
             </li>
-          </ul>
-          <h4>4.bug说明:</h4>
-          <ul>
             <li>
-              1.在移动端使用QQ等浏览器播放过视频后,输入框和弹幕无法显示。
+              服务器部署
               <p>
-                <span>原因:由于QQ、UC等主流浏览器会检测网页中的video标签，并使用浏览器自带的视频播放器播放视频，
-                导致无法显示弹幕和输入框。(在很多直播平台也存在这样的问题，比如熊猫TV的移动端。)</span><br>
-              <p>解决办法:使用谷歌(手机端）浏览器,或尝试访问本直播间的电脑端</p>
+                <span>直播推流/拉流: nginx-rtmp-module</span><br>
+                <span>应用服务器: 内嵌 Tomcat 或外部 Tomcat 8</span>
               </p>
             </li>
           </ul>
-          <h4>5.关于作者:</h4>
+
+          <h4>4. 已知限制</h4>
           <ul>
-            <li>作者: jack-hoo</li>
-            <li>学历: 本科</li>
-            <li>个人简历: <a href="/LiveDemo/resume">jack-hoo的简历</a></li>
-            <li>毕业院校: ***REMOVED***软件工程</li>
-            <li>技术栈:JavaWeb全栈开发</li>
-            <li>博客地址: <a href="http://github.com/jack-hoo">csdn</a></li>
-            <li>开源项目地址: <a href="https://github.com/jack-hoo">github</a></li>
-            <li>状态: 求职中(谢谢各位老板和猎手)</li>
-            <li>联系方式: ***REMOVED***</li>
-            <li>邮箱: 22088468+jack-hoo@users.noreply.github.com</li>
+            <li>
+              移动端用 QQ、UC 等浏览器播放过视频后，输入框和弹幕会被遮挡
+              <p>
+                <span>原因: 这类浏览器会劫持页面里的 video 标签，强制用自带播放器全屏播放，
+                  导致页面上的弹幕层和输入框被盖住。很多直播平台的移动端都有同样的问题。</span><br>
+                <span>规避: 改用 Chrome（手机端）访问，或访问电脑端页面。</span>
+              </p>
+            </li>
+            <li>
+              电脑端 RTMP 拉流已无法播放
+              <p>
+                <span>原因: RTMP 播放依赖 Flash，主流浏览器自 2021 年起已全面移除 Flash 支持。</span><br>
+                <span>规避: 使用 HLS(m3u8) 直播源。</span>
+              </p>
+            </li>
           </ul>
         </scroll>
-        <md-button class="button button-balanced" style="border-radius:0px;position: fixed;
-        bottom: 0px;width: 100%" @click.native="feedback" >
+        <md-button class="button button-balanced"
+                   style="border-radius:0px;position: fixed;bottom: 0px;width: 100%"
+                   @click.native="feedback">
           反馈问题
         </md-button>
       </div>
-
-
     </div>
   </div>
 </template>
@@ -126,11 +121,8 @@
       Slideout
     },
     methods: {
-      feedback(){
+      feedback () {
         this.$router.push('/feedback')
-      }   ,
-      open: function () {
-        console.log('slideoutOpen')
       }
     }
   }
@@ -143,17 +135,17 @@
     color: rgba(17, 187, 70, 0.81);
   }
 
-  ul > li >p{
+  ul > li > p {
     color: black;
   }
-  ul > li >p >span{
+
+  ul > li > p > span {
     color: #a16014
   }
+
   .content-box {
     margin-top: 80px;
     padding: 4px;
     margin-bottom: 55px;
   }
-
-
 </style>

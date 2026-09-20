@@ -1,4 +1,22 @@
-.DS_Store
+### 依赖与构建产物 ###
 node_modules/
 dist/
-npm-debug.log
+
+### 日志 ###
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+*.log
+
+### 本地环境变量 ###
+.env
+.env.*
+
+### 编辑器 / IDE ###
+.idea/
+*.iml
+.vscode/
+
+### 操作系统 ###
+.DS_Store
+Thumbs.db

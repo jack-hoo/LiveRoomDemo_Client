@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  check:
+    name: Syntax check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # 说明：这里刻意不跑 npm install / npm run build。
+      #
+      # 本项目的构建链是 webpack 2 + node-sass 4.x，只能在 Node 8 上安装依赖，
+      # 而 GitHub 托管的 runner 已不再提供 Node 8。与其在 CI 里维护一套装不上的
+      # 依赖，不如退一步做能可靠执行的检查：所有源码文件的语法是否合法。
+      #
+      # 完整构建请在本地用 Node 8 执行，见 CONTRIBUTING.md。
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check syntax of all source files
+        run: npm run check

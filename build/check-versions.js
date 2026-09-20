@@ -33,12 +33,18 @@ module.exports = function () {
 
   if (warnings.length) {
     console.log('')
-    console.log(chalk.yellow('To use this template, you must update following to modules:'))
+    console.log(chalk.yellow('当前运行环境不满足本项目的版本要求:'))
     console.log()
     for (var i = 0; i < warnings.length; i++) {
       var warning = warnings[i]
       console.log('  ' + warning)
     }
+    console.log()
+    // 本项目的构建链停留在 webpack 2 + node-sass 4.x 时代，node-sass 的原生模块
+    // 在 Node 9 及以上没有预编译产物，装依赖这一步就会失败。与其让人对着
+    // node-sass 的编译错误排查半天，不如在这里把原因说清楚。
+    console.log(chalk.yellow('  提示: 请使用 Node 8.x（推荐 nvm install 8 && nvm use 8）。'))
+    console.log(chalk.yellow('        原因与背景见 README 的"环境要求"一节。'))
     console.log()
     process.exit(1)
   }
